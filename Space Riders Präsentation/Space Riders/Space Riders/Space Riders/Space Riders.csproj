@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09C5C87B-B4A5-4AEE-AC24-FEE35F58936F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Space_Riders</RootNamespace>
+    <AssemblyName>Space Riders</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Space Riders.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>7C031603B45588112279317A632409640B2F00ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Space Riders_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>SpaceRiders.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.94.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Benutzer\Paul\Downloads\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Asteroid.cs" />
+    <Compile Include="Bioschiff.cs" />
+    <Compile Include="Blauer_Komet.cs" />
+    <Compile Include="Doppelstation.cs" />
+    <Compile Include="Eingangssequenz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eingangssequenz.Designer.cs">
+      <DependentUpon>Eingangssequenz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Einschlag.cs" />
+    <Compile Include="Endsequenz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Endsequenz.Designer.cs">
+      <DependentUpon>Endsequenz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Erde.cs" />
+    <Compile Include="FeindlichesSchiff.cs" />
+    <Compile Include="Flugkoerper.cs" />
+    <Compile Include="Flugmanager.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOver.Designer.cs">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameOverAnimation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameOverAnimation.Designer.cs">
+      <DependentUpon>GameOverAnimation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Highscore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Highscore.Designer.cs">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hindernisse.cs" />
+    <Compile Include="IModify.cs" />
+    <Compile Include="Komet.cs" />
+    <Compile Include="Kreisschiff.cs" />
+    <Compile Include="Metallplanet.cs" />
+    <Compile Include="Munition.cs" />
+    <Compile Include="Optionen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Optionen.Designer.cs">
+      <DependentUpon>Optionen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pause.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pause.Designer.cs">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Raumschiff.cs" />
+    <Compile Include="Saturn.cs" />
+    <Compile Include="Schuss.cs" />
+    <Compile Include="Sonne.cs" />
+    <Compile Include="Satellit.cs" />
+    <Compile Include="Schild.cs" />
+    <Compile Include="Skelettstation.cs" />
+    <Compile Include="Speicher.cs" />
+    <Compile Include="Spiel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spiel.Designer.cs">
+      <DependentUpon>Spiel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spielanleitung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spielanleitung.Designer.cs">
+      <DependentUpon>Spielanleitung.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Eingangssequenz.resx">
+      <DependentUpon>Eingangssequenz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Endsequenz.resx">
+      <DependentUpon>Endsequenz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOver.resx">
+      <DependentUpon>GameOver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameOverAnimation.resx">
+      <DependentUpon>GameOverAnimation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Highscore.resx">
+      <DependentUpon>Highscore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Optionen.resx">
+      <DependentUpon>Optionen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pause.resx">
+      <DependentUpon>Pause.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spiel.resx">
+      <DependentUpon>Spiel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spielanleitung.resx">
+      <DependentUpon>Spielanleitung.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1 Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2 Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3 Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\232.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A Taste2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESC Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\F Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leertaste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Music - Mute.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speaker-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwars-0017.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starwars-0039.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\W Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-wars-battlefront1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asteroid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FeindlichesSchiff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Komet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Satellit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schild.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Haumptmenue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\300px-Parkbank_Weltraum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bioschiff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blauer_komet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doppelstation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Einschlag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Erde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kreisschiff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Metallplanet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Skelettstation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sonne.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saturn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Schiff2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Optionen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\linker_Mausklick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spielanleitung.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Highscore.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Munition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C Taste.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Verschwinden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R Taste1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SpaceRiders.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

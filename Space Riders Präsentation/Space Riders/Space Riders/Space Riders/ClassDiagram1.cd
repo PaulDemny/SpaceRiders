@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Space_Riders.Asteroid">
+    <Position X="5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAASAAgAA=</HashCode>
+      <FileName>Asteroid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Bioschiff">
+    <Position X="11.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAEAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Bioschiff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Blauer_Komet">
+    <Position X="20.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Blauer_Komet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Doppelstation">
+    <Position X="27.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAEACAAgAA=</HashCode>
+      <FileName>Doppelstation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Eingangssequenz">
+    <Position X="44" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAAAAAAiAAAAKAAAAAABAABAAAAAAAAA=</HashCode>
+      <FileName>Eingangssequenz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Einschlag">
+    <Position X="29.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Einschlag.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Endsequenz">
+    <Position X="44" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAACAAAAAQAACAAAAKIAAAAABBAAAAAAAAAAA=</HashCode>
+      <FileName>Endsequenz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Erde">
+    <Position X="14" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAQAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Erde.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.FeindlichesSchiff">
+    <Position X="23" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAQAAAACAAgAA=</HashCode>
+      <FileName>FeindlichesSchiff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Flugkoerper">
+    <Position X="19.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAgADAAIAAQEAgAACAIAAAgAAAAAAQAACAEgAA=</HashCode>
+      <FileName>Flugkoerper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Space_Riders.Flugmanager">
+    <Position X="40" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oxZMEAgAADIA2ggHGMNZACAg+Q0okQAJoIIkAAEoIAA=</HashCode>
+      <FileName>Flugmanager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Hauptmenue">
+    <Position X="31.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAgAAAAACQAABUMBACAAAgCAAEgAEABAAAAAAOAEAg=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.GameOver">
+    <Position X="33.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAJICQEABAAAACAgIgKAAAAAEABAAAABQAAAAg=</HashCode>
+      <FileName>GameOver.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.GameOverAnimation">
+    <Position X="30" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAICAIAAAAgQCAAAAKAAAAAABBAAAAAAAAAAA=</HashCode>
+      <FileName>GameOverAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Highscore">
+    <Position X="44" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAABoAAACABABEAEqCQAABCAAECAAABCAAAAAFAAAA=</HashCode>
+      <FileName>Highscore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Hindernisse">
+    <Position X="19.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Hindernisse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Komet">
+    <Position X="32" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAACAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Komet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Kreisschiff">
+    <Position X="7.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Kreisschiff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Metallplanet">
+    <Position X="16.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAEAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Metallplanet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Munition">
+    <Position X="15.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAACEAgAA=</HashCode>
+      <FileName>Munition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Optionen">
+    <Position X="42" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAIhAICCAIARmABACAwEAGQAIACAAFAAACIRECAAA=</HashCode>
+      <FileName>Optionen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Pause">
+    <Position X="46" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAEAEDEACAIAJGEhADQgAAGSAGcAAAFAAADBDAAgAA=</HashCode>
+      <FileName>Pause.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Program">
+    <Position X="44" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Raumschiff">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAEBAEAJAAAABAAAAIAAAAAAAACAAgAA=</HashCode>
+      <FileName>Raumschiff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Satellit">
+    <Position X="18.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAEAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Satellit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Saturn">
+    <Position X="25.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAiAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Saturn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Schild">
+    <Position X="23" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAgAAAAAAAACAAgAA=</HashCode>
+      <FileName>Schild.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Schuss">
+    <Position X="23" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAQAAAAAAAAAAAAACAAACAAgAA=</HashCode>
+      <FileName>Schuss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Skelettstation">
+    <Position X="34.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>Skelettstation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Sonne">
+    <Position X="9.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAACAAAAAAEAAAAAAAAAAAAAAACAAAACAAgAA=</HashCode>
+      <FileName>Sonne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Speicher">
+    <Position X="35.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAIIAAACCAAAAAAAAAAAAAAAAABAAACAQABA=</HashCode>
+      <FileName>Speicher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Spiel">
+    <Position X="37.75" Y="0.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="Space_Riders.Spiel.Fertig" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Spiel.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAEAACADAAAUAMgAGAoBKGAAACTFABQIAAEAAAAiI=</HashCode>
+      <FileName>Spiel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Spielanleitung">
+    <Position X="48" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wAAIhAAACAAAREAEICAQBACAAAAEACBQAAgAAFAADA=</HashCode>
+      <FileName>Spielanleitung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Properties.Resources">
+    <Position X="50" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JQBggQAUQ4kQAAABAEBBsACCQQFICEABBIAIAAF+hMA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Space_Riders.Properties.Settings">
+    <Position X="50" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Space_Riders.IModify">
+    <Position X="19.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAACAAgAA=</HashCode>
+      <FileName>IModify.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

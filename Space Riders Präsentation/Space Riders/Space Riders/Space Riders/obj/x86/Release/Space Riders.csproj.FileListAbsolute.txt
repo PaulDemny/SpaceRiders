@@ -1,0 +1,28 @@
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\Space Riders.exe.manifest
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\Space Riders.application
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\Space Riders.exe
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\Space Riders.pdb
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\System.Data.SQLite.dll
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\Interop.WMPLib.dll
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\bin\Release\AxInterop.WMPLib.dll
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Interop.WMPLib.dll
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\AxInterop.WMPLib.dll
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.csproj.ResolveComReference.cache
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Eingangssequenz.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Endsequenz.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Hauptmenue.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.GameOver.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.GameOverAnimation.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Highscore.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Optionen.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Pause.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Properties.Resources.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Spiel.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space_Riders.Spielanleitung.resources
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.csproj.GenerateResource.Cache
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.TrustInfo.xml
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.exe.manifest
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.application
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.exe
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.pdb
+C:\Users\Paul\Desktop\Space Riders\Space Riders\Space Riders\obj\x86\Release\Space Riders.csprojResolveAssemblyReference.cache

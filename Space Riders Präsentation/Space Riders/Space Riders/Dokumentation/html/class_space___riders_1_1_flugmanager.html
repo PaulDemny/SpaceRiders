@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>SPACE RIDERS: Space_Riders.Flugmanager Klassenreferenz</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Space_Riders.jpg"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SPACE RIDERS
+   &#160;<span id="projectnumber">Version: MARK 3.00.0</span>
+   </div>
+   <div id="projectbrief">Dokumentation und Beschreibung des Spiels SPACE RIDERS by Liebhardt - Pfetsch - Demny Entertainment Ltd.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="namespaces.html"><span>Pakete</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Klassen</span></a></li>
+      <li><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Auflistung&#160;der&#160;Klassen</span></a></li>
+      <li><a href="classes.html"><span>Klassen-Verzeichnis</span></a></li>
+      <li><a href="hierarchy.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="functions.html"><span>Klassen-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_space___riders_1_1_flugmanager.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Propertys</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#properties">Propertys</a> &#124;
+<a href="class_space___riders_1_1_flugmanager-members.html">Aufstellung aller Elemente</a>  </div>
+  <div class="headertitle">
+<div class="title">Space_Riders.Flugmanager Klassenreferenz</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Die Klasse <a class="el" href="class_space___riders_1_1_flugmanager.html" title="Die Klasse Flugmanager regelt im Hintergrund die Abläufe des Spiels ">Flugmanager</a> regelt im Hintergrund die Abläufe des Spiels  
+ <a href="class_space___riders_1_1_flugmanager.html#details">Mehr ...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Öffentliche Methoden</h2></td></tr>
+<tr class="memitem:a23bd6d16db2250ff6a5ab3319901f8dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a23bd6d16db2250ff6a5ab3319901f8dd">PanelGroeßeFestlegen</a> (int sizeWidthPanel, int sizeHeightPanel)</td></tr>
+<tr class="memdesc:a23bd6d16db2250ff6a5ab3319901f8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode legt die Größe der Spielfläche fest  <a href="#a23bd6d16db2250ff6a5ab3319901f8dd">Mehr ...</a><br /></td></tr>
+<tr class="separator:a23bd6d16db2250ff6a5ab3319901f8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8f9647a96cc3a40edc900cd5163f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#acc8f9647a96cc3a40edc900cd5163f41">Start</a> ()</td></tr>
+<tr class="memdesc:acc8f9647a96cc3a40edc900cd5163f41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dieser Timer bestimmt das Intervall, ind dem das Event hindernisseErzeugen_Tick aufgerufen wird  <a href="#acc8f9647a96cc3a40edc900cd5163f41">Mehr ...</a><br /></td></tr>
+<tr class="separator:acc8f9647a96cc3a40edc900cd5163f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c60d9d82341be0372e421ca075babc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a1c60d9d82341be0372e421ca075babc8">HindernisseBewegen</a> ()</td></tr>
+<tr class="memdesc:a1c60d9d82341be0372e421ca075babc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mit dieser Methode werden alle <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> bewegt, die Geschwindigkeit der <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> erhöht und <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> gelöscht  <a href="#a1c60d9d82341be0372e421ca075babc8">Mehr ...</a><br /></td></tr>
+<tr class="separator:a1c60d9d82341be0372e421ca075babc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95925b5b8bf9f8fb80ef5a3786ebf32"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#ad95925b5b8bf9f8fb80ef5a3786ebf32">SchildStatus</a> ()</td></tr>
+<tr class="memdesc:ad95925b5b8bf9f8fb80ef5a3786ebf32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode gibt den Status des Schutzschildes des Raumschiffs aus  <a href="#ad95925b5b8bf9f8fb80ef5a3786ebf32">Mehr ...</a><br /></td></tr>
+<tr class="separator:ad95925b5b8bf9f8fb80ef5a3786ebf32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb93f9c564003842f20ce66f1170e6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#aefb93f9c564003842f20ce66f1170e6c">Schildaktivieren</a> ()</td></tr>
+<tr class="memdesc:aefb93f9c564003842f20ce66f1170e6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode aktiviert das Schutzschild des Raumschiffs  <a href="#aefb93f9c564003842f20ce66f1170e6c">Mehr ...</a><br /></td></tr>
+<tr class="separator:aefb93f9c564003842f20ce66f1170e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1160eee0063dc13112a6950b779d3caa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a1160eee0063dc13112a6950b779d3caa">Krater</a> (Rectangle rect)</td></tr>
+<tr class="memdesc:a1160eee0063dc13112a6950b779d3caa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entfernt alle <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> im Umkreis eines Rechtscks, Bombe  <a href="#a1160eee0063dc13112a6950b779d3caa">Mehr ...</a><br /></td></tr>
+<tr class="separator:a1160eee0063dc13112a6950b779d3caa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8c743d9e340a723611810d6b5ef7e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#acd8c743d9e340a723611810d6b5ef7e1">Schießen</a> ()</td></tr>
+<tr class="memdesc:acd8c743d9e340a723611810d6b5ef7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_space___riders_1_1_schuss.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Schusses fest ">Schuss</a> wird ausgelöst  <a href="#acd8c743d9e340a723611810d6b5ef7e1">Mehr ...</a><br /></td></tr>
+<tr class="separator:acd8c743d9e340a723611810d6b5ef7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfba8c2e224f86550cd445807e546824"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#abfba8c2e224f86550cd445807e546824">Zuruecksetzen</a> ()</td></tr>
+<tr class="memdesc:abfba8c2e224f86550cd445807e546824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode setzt alle Werte auf die Startwerte zurück  <a href="#abfba8c2e224f86550cd445807e546824">Mehr ...</a><br /></td></tr>
+<tr class="separator:abfba8c2e224f86550cd445807e546824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d06f97cc4fc77d62ef59998fa8747a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a3d06f97cc4fc77d62ef59998fa8747a9">RaumschiffAUF</a> ()</td></tr>
+<tr class="memdesc:a3d06f97cc4fc77d62ef59998fa8747a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode ruft die Methode BewegenAUF() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf  <a href="#a3d06f97cc4fc77d62ef59998fa8747a9">Mehr ...</a><br /></td></tr>
+<tr class="separator:a3d06f97cc4fc77d62ef59998fa8747a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e1820c8066cd6a606725bfa5fc87fa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a9e1820c8066cd6a606725bfa5fc87fa4">RaumschiffAB</a> ()</td></tr>
+<tr class="memdesc:a9e1820c8066cd6a606725bfa5fc87fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode ruft die Methode BewegenAB() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf  <a href="#a9e1820c8066cd6a606725bfa5fc87fa4">Mehr ...</a><br /></td></tr>
+<tr class="separator:a9e1820c8066cd6a606725bfa5fc87fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d2516f2c9d6fbf95f8bf1f6304de1cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a6d2516f2c9d6fbf95f8bf1f6304de1cf">RaumschiffLinks</a> ()</td></tr>
+<tr class="memdesc:a6d2516f2c9d6fbf95f8bf1f6304de1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode ruft die Methode BewegenLinks() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf  <a href="#a6d2516f2c9d6fbf95f8bf1f6304de1cf">Mehr ...</a><br /></td></tr>
+<tr class="separator:a6d2516f2c9d6fbf95f8bf1f6304de1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4407a0243f617c2eb6f68c2dbd897f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a1d4407a0243f617c2eb6f68c2dbd897f">RaumschiffRechts</a> ()</td></tr>
+<tr class="memdesc:a1d4407a0243f617c2eb6f68c2dbd897f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode ruft die Methode BewegenRechts() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf  <a href="#a1d4407a0243f617c2eb6f68c2dbd897f">Mehr ...</a><br /></td></tr>
+<tr class="separator:a1d4407a0243f617c2eb6f68c2dbd897f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49f0bf8d554a7e765029c1c500ba311f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a49f0bf8d554a7e765029c1c500ba311f">Beam</a> (int x, int y)</td></tr>
+<tr class="memdesc:a49f0bf8d554a7e765029c1c500ba311f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode prüft das gewählte Ramschiff und ruft die Methode RaumschiffBeam() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf  <a href="#a49f0bf8d554a7e765029c1c500ba311f">Mehr ...</a><br /></td></tr>
+<tr class="separator:a49f0bf8d554a7e765029c1c500ba311f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af5988b1f93c2f787ce83d32a5a49f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a7af5988b1f93c2f787ce83d32a5a49f2">Treffer</a> ()</td></tr>
+<tr class="memdesc:a7af5988b1f93c2f787ce83d32a5a49f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Überprüfung ob ein <a class="el" href="class_space___riders_1_1_schuss.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Schusses fest ">Schuss</a> ein Hinderniss getroffen hat  <a href="#a7af5988b1f93c2f787ce83d32a5a49f2">Mehr ...</a><br /></td></tr>
+<tr class="separator:a7af5988b1f93c2f787ce83d32a5a49f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0054efeb9f71854712e4641a3e15bad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#ac0054efeb9f71854712e4641a3e15bad">PruefeKolission</a> ()</td></tr>
+<tr class="memdesc:ac0054efeb9f71854712e4641a3e15bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Methode prüft auf Kollisionen des Raumschiffs mit allen Hindernissen, welche horizontal über die Spielflaeche bewegt wird  <a href="#ac0054efeb9f71854712e4641a3e15bad">Mehr ...</a><br /></td></tr>
+<tr class="separator:ac0054efeb9f71854712e4641a3e15bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
+Propertys</h2></td></tr>
+<tr class="memitem:adb50fc6479cc4d35aec02f7c6830b1cf"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#adb50fc6479cc4d35aec02f7c6830b1cf">HindernisseHori</a><code> [get]</code></td></tr>
+<tr class="memdesc:adb50fc6479cc4d35aec02f7c6830b1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf die Liste HindernisseHori zuzugreifen  <a href="#adb50fc6479cc4d35aec02f7c6830b1cf">Mehr ...</a><br /></td></tr>
+<tr class="separator:adb50fc6479cc4d35aec02f7c6830b1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99de8ecdb84c69cb03f4c6cd02cb0a4b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a99de8ecdb84c69cb03f4c6cd02cb0a4b">HindernisseVert</a><code> [get]</code></td></tr>
+<tr class="memdesc:a99de8ecdb84c69cb03f4c6cd02cb0a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf die Liste HindernisseVert zuzugreifen  <a href="#a99de8ecdb84c69cb03f4c6cd02cb0a4b">Mehr ...</a><br /></td></tr>
+<tr class="separator:a99de8ecdb84c69cb03f4c6cd02cb0a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b90053d0e0fae67bdc552b3cb3f0c39"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a3b90053d0e0fae67bdc552b3cb3f0c39">Schuss</a><code> [get]</code></td></tr>
+<tr class="separator:a3b90053d0e0fae67bdc552b3cb3f0c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1213775248ca9fa8ac3de9fbbd5507ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_space___riders_1_1_raumschiff.html">Raumschiff</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a1213775248ca9fa8ac3de9fbbd5507ee">Raumschiff</a><code> [get]</code></td></tr>
+<tr class="memdesc:a1213775248ca9fa8ac3de9fbbd5507ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> zuzugreifen  <a href="#a1213775248ca9fa8ac3de9fbbd5507ee">Mehr ...</a><br /></td></tr>
+<tr class="separator:a1213775248ca9fa8ac3de9fbbd5507ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46fdb504484df0eae7f01098944181ab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a46fdb504484df0eae7f01098944181ab">Score</a><code> [get]</code></td></tr>
+<tr class="memdesc:a46fdb504484df0eae7f01098944181ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Score zuzugreifen  <a href="#a46fdb504484df0eae7f01098944181ab">Mehr ...</a><br /></td></tr>
+<tr class="separator:a46fdb504484df0eae7f01098944181ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c71f0caf9ef2e92e319bd0704be1d6"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a93c71f0caf9ef2e92e319bd0704be1d6">Level</a><code> [get]</code></td></tr>
+<tr class="memdesc:a93c71f0caf9ef2e92e319bd0704be1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Level zuzugreifen  <a href="#a93c71f0caf9ef2e92e319bd0704be1d6">Mehr ...</a><br /></td></tr>
+<tr class="separator:a93c71f0caf9ef2e92e319bd0704be1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a171e5a2910fc036cb67aa18a0268fbcf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a171e5a2910fc036cb67aa18a0268fbcf">Schild</a><code> [get]</code></td></tr>
+<tr class="memdesc:a171e5a2910fc036cb67aa18a0268fbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Score zuzugreifen  <a href="#a171e5a2910fc036cb67aa18a0268fbcf">Mehr ...</a><br /></td></tr>
+<tr class="separator:a171e5a2910fc036cb67aa18a0268fbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c4c1c7479be4d7166376c3b99f5b21"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#aa2c4c1c7479be4d7166376c3b99f5b21">Kristalle</a><code> [get]</code></td></tr>
+<tr class="memdesc:aa2c4c1c7479be4d7166376c3b99f5b21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Kristalle zuzugreifen  <a href="#aa2c4c1c7479be4d7166376c3b99f5b21">Mehr ...</a><br /></td></tr>
+<tr class="separator:aa2c4c1c7479be4d7166376c3b99f5b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e72f6341c907be50486e280e369fe4"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a26e72f6341c907be50486e280e369fe4">Beams</a><code> [get]</code></td></tr>
+<tr class="memdesc:a26e72f6341c907be50486e280e369fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Beams zuzugreifen  <a href="#a26e72f6341c907be50486e280e369fe4">Mehr ...</a><br /></td></tr>
+<tr class="separator:a26e72f6341c907be50486e280e369fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d209fc9b26b186b716aca6a4f23a39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a08d209fc9b26b186b716aca6a4f23a39">Wiederhohlung</a><code> [get]</code></td></tr>
+<tr class="memdesc:a08d209fc9b26b186b716aca6a4f23a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diese Flag verhindert mehrmals aufrufen von Methoden  <a href="#a08d209fc9b26b186b716aca6a4f23a39">Mehr ...</a><br /></td></tr>
+<tr class="separator:a08d209fc9b26b186b716aca6a4f23a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05596e7b359b940d87800d216488fbe7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a05596e7b359b940d87800d216488fbe7">Munition</a><code> [get]</code></td></tr>
+<tr class="memdesc:a05596e7b359b940d87800d216488fbe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf <a class="el" href="class_space___riders_1_1_munition.html" title="Diese Klasse legt das Aussehen und das Verhalten der Munition fest ">Munition</a> zuzugreifen  <a href="#a05596e7b359b940d87800d216488fbe7">Mehr ...</a><br /></td></tr>
+<tr class="separator:a05596e7b359b940d87800d216488fbe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21df348bfa6bd80980f628586f1ad73"><td class="memItemLeft" align="right" valign="top">Timer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#ac21df348bfa6bd80980f628586f1ad73">HindernisseErzeugen</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:ac21df348bfa6bd80980f628586f1ad73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dieser Timer erstellt in jedem Intervall <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a>  <a href="#ac21df348bfa6bd80980f628586f1ad73">Mehr ...</a><br /></td></tr>
+<tr class="separator:ac21df348bfa6bd80980f628586f1ad73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f3e733e00da89663d83f99eb500fc12"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_space___riders_1_1_flugmanager.html#a5f3e733e00da89663d83f99eb500fc12">Bomben</a><code> [get]</code></td></tr>
+<tr class="memdesc:a5f3e733e00da89663d83f99eb500fc12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Propertie um auf Bomben zuzugreifen  <a href="#a5f3e733e00da89663d83f99eb500fc12">Mehr ...</a><br /></td></tr>
+<tr class="separator:a5f3e733e00da89663d83f99eb500fc12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
+<div class="textblock"><p>Die Klasse <a class="el" href="class_space___riders_1_1_flugmanager.html" title="Die Klasse Flugmanager regelt im Hintergrund die Abläufe des Spiels ">Flugmanager</a> regelt im Hintergrund die Abläufe des Spiels </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00013">13</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+</div><h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="a49f0bf8d554a7e765029c1c500ba311f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Beam </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode prüft das gewählte Ramschiff und ruft die Methode RaumschiffBeam() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>neue x Koordinate des Raumschiffs</td></tr>
+    <tr><td class="paramname">y</td><td>neue y Koordinate des Raumschiffs</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l01021">1021</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c60d9d82341be0372e421ca075babc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.HindernisseBewegen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mit dieser Methode werden alle <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> bewegt, die Geschwindigkeit der <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> erhöht und <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> gelöscht </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00705">705</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1160eee0063dc13112a6950b779d3caa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Krater </td>
+          <td>(</td>
+          <td class="paramtype">Rectangle&#160;</td>
+          <td class="paramname"><em>rect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Entfernt alle <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> im Umkreis eines Rechtscks, Bombe </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rect</td><td>"Bombenkrater"</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00896">896</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a23bd6d16db2250ff6a5ab3319901f8dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.PanelGroeßeFestlegen </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeWidthPanel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sizeHeightPanel</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode legt die Größe der Spielfläche fest </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sizeWidthPanel</td><td>Breite der Spielfläche</td></tr>
+    <tr><td class="paramname">sizeHeightPanel</td><td>Höhe der Spielfläche</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00103">103</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac0054efeb9f71854712e4641a3e15bad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Space_Riders.Flugmanager.PruefeKolission </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode prüft auf Kollisionen des Raumschiffs mit allen Hindernissen, welche horizontal über die Spielflaeche bewegt wird </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>flag ob Kollission stattgefunden hat oder nicht</dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l01105">1105</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a9e1820c8066cd6a606725bfa5fc87fa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.RaumschiffAB </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode ruft die Methode BewegenAB() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00995">995</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d06f97cc4fc77d62ef59998fa8747a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.RaumschiffAUF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode ruft die Methode BewegenAUF() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00987">987</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d2516f2c9d6fbf95f8bf1f6304de1cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.RaumschiffLinks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode ruft die Methode BewegenLinks() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l01003">1003</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1d4407a0243f617c2eb6f68c2dbd897f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.RaumschiffRechts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode ruft die Methode BewegenRechts() der Klasse <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> auf </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l01011">1011</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acd8c743d9e340a723611810d6b5ef7e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Schießen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="class_space___riders_1_1_schuss.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Schusses fest ">Schuss</a> wird ausgelöst </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00932">932</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aefb93f9c564003842f20ce66f1170e6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Schildaktivieren </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode aktiviert das Schutzschild des Raumschiffs </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00871">871</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad95925b5b8bf9f8fb80ef5a3786ebf32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">string Space_Riders.Flugmanager.SchildStatus </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode gibt den Status des Schutzschildes des Raumschiffs aus </p>
+<dl class="section return"><dt>Rückgabe</dt><dd>aktuelle Status des Schildes</dd></dl>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00843">843</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="acc8f9647a96cc3a40edc900cd5163f41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dieser Timer bestimmt das Intervall, ind dem das Event hindernisseErzeugen_Tick aufgerufen wird </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00211">211</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a7af5988b1f93c2f787ce83d32a5a49f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Treffer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Überprüfung ob ein <a class="el" href="class_space___riders_1_1_schuss.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Schusses fest ">Schuss</a> ein Hinderniss getroffen hat </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l01061">1061</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abfba8c2e224f86550cd445807e546824"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Space_Riders.Flugmanager.Zuruecksetzen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Diese Methode setzt alle Werte auf die Startwerte zurück </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00949">949</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentation der Propertys</h2>
+<a class="anchor" id="a26e72f6341c907be50486e280e369fe4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Space_Riders.Flugmanager.Beams</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Beams zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00174">174</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a5f3e733e00da89663d83f99eb500fc12"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Space_Riders.Flugmanager.Bomben</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Bomben zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00205">205</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac21df348bfa6bd80980f628586f1ad73"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Timer Space_Riders.Flugmanager.HindernisseErzeugen</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dieser Timer erstellt in jedem Intervall <a class="el" href="class_space___riders_1_1_hindernisse.html" title="Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest ">Hindernisse</a> </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00197">197</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="adb50fc6479cc4d35aec02f7c6830b1cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a>&gt; Space_Riders.Flugmanager.HindernisseHori</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf die Liste HindernisseHori zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00112">112</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a99de8ecdb84c69cb03f4c6cd02cb0a4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a>&gt; Space_Riders.Flugmanager.HindernisseVert</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf die Liste HindernisseVert zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00120">120</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa2c4c1c7479be4d7166376c3b99f5b21"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Space_Riders.Flugmanager.Kristalle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Kristalle zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00166">166</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a93c71f0caf9ef2e92e319bd0704be1d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">byte Space_Riders.Flugmanager.Level</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Level zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00150">150</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a05596e7b359b940d87800d216488fbe7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Space_Riders.Flugmanager.Munition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf <a class="el" href="class_space___riders_1_1_munition.html" title="Diese Klasse legt das Aussehen und das Verhalten der Munition fest ">Munition</a> zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00190">190</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1213775248ca9fa8ac3de9fbbd5507ee"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_space___riders_1_1_raumschiff.html">Raumschiff</a> Space_Riders.Flugmanager.Raumschiff</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf <a class="el" href="class_space___riders_1_1_raumschiff.html" title="Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest ">Raumschiff</a> zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00134">134</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a171e5a2910fc036cb67aa18a0268fbcf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Space_Riders.Flugmanager.Schild</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Score zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00158">158</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b90053d0e0fae67bdc552b3cb3f0c39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;<a class="el" href="class_space___riders_1_1_flugkoerper.html">Flugkoerper</a>&gt; Space_Riders.Flugmanager.Schuss</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00127">127</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a46fdb504484df0eae7f01098944181ab"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Space_Riders.Flugmanager.Score</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Propertie um auf Score zuzugreifen </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00142">142</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a08d209fc9b26b186b716aca6a4f23a39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Space_Riders.Flugmanager.Wiederhohlung</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Diese Flag verhindert mehrmals aufrufen von Methoden </p>
+
+<p>Definiert in Zeile <a class="el" href="_flugmanager_8cs_source.html#l00182">182</a> der Datei <a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a>.</p>
+
+</div>
+</div>
+<hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
+<li>Space Riders/<a class="el" href="_flugmanager_8cs_source.html">Flugmanager.cs</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_space___riders.html">Space_Riders</a></li><li class="navelem"><a class="el" href="class_space___riders_1_1_flugmanager.html">Flugmanager</a></li>
+    <li class="footer">Erzeugt am Fre Jan 15 2016 18:29:15 für SPACE RIDERS von
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
+  </ul>
+</div>
+</body>
+</html>

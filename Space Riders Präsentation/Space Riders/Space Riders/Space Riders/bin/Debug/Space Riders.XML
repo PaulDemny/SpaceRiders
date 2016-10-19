@@ -1,0 +1,2789 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Space Riders</name>
+    </assembly>
+    <members>
+        <member name="T:Space_Riders.Asteroid">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Asteroid fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Asteroid.asteroid">
+            <summary>
+            Dieses Bitmap wird jedem Asteroiden übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Asteroid.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Asteroid
+            </summary>
+            <param name="bitmap">Bitmap des Asteroiden</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Asteroids</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Asteroid.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns>Dieses Bitmap wird dem Asteroiden zugordnet</returns>
+        </member>
+        <member name="M:Space_Riders.Asteroid.Setzen">
+            <summary>
+            Asteroid wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Asteroid.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Asteroiden um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Asteroid.BewegenVert">
+            <summary>
+            Diese Methode bewegt den Asteroiden um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Asteroid.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Asteroid.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Bioschiff">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Bioschiff fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Bioschiff.bioschiff">
+            <summary>
+            Dieses Bitmap wird jedem Bioschiff übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Bioschiff
+            </summary>
+            <param name="bitmap">Bitmap des Bioschiffs</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Bioschiffs</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns>Dieses Bitmap wird dem Asteroiden zugordnet</returns>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.Setzen">
+            <summary>
+            Bioschiff wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.BewegenHori">
+            <summary>
+            Diese Methode bewegt das Bioschiff um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.BewegenVert">
+            <summary>
+            Diese Methode bewegt das Bioschiff um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Bioschiff.Dispose(System.Boolean)">
+            <summary>
+             Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Blauer_Komet">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Blauer_Komet fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Blauer_Komet.blauer_komet">
+            <summary>
+            Dieses Bitmap wird jedem blauen Kometen übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Blauer_Komet
+            </summary>
+            <param name="bitmap">Bitmap des Blauen Kometen</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Blauen Kometen</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns>Dieses Bitmap wird dem Asteroiden zugordnet</returns>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.Setzen">
+            <summary>
+            Blauer Komet wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.BewegenHori">
+            <summary>
+            Da dieses Hindernis nur von unten nach oben bewegt wird, wird diese Methode nicht implementiert
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.BewegenVert">
+            <summary>
+            Diese Methode bewegt den blauen Kometen um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Blauer_Komet.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Doppelstation">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Doppelstation fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Doppelstation.doppelstation">
+            <summary>
+            Dieses Bitmap wird jeder Doppelstation übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hinderniss Doppelstation
+            </summary>
+            <param name="bitmap">Bitmap der Doppelstation</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit der Doppelstation</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns>Dieses Bitmap wird der Doppelstation zugordnet</returns>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.Setzen">
+            <summary>
+            Doppelstation wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.BewegenHori">
+            <summary>
+            Diese Methode bewegt die Doppelstation um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.BewegenVert">
+            <summary>
+            Diese Methode bewegt die Doppelstation um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Doppelstation.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Eingangssequenz">
+            <summary>
+            Diese Klasse beeinhaltet das Video der Eingangsanimation des Spiels
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Eingangssequenz.timer">
+            <summary>
+            Dieser Timer schliesst am Ende das Video
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Eingangssequenz.ticks">
+            <summary>
+            Dieser Zähler wird jede Sekunde um eins erhöht
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.#ctor">
+            <summary>
+            Konstruktor der Eingangssequenz
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.Eingangssequenz_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald die Eingangsanimation geladen wird. Der Timer , das Video und der Player wird gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgelöst, sobald der Timer überläuft. Die Variable ticks wird um eins erhöht und wenn sie 21 erreicht, wird die Eingangssequenz beendet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.Eingangsanimation_MouseDownEvent(System.Object,AxWMPLib._WMPOCXEvents_MouseDownEvent)">
+            <summary>
+            Dieses Event wird ausgelöst, sobald die linke oder rechte Maustaste gedrückt wird. Es schließt die Eingangsanimation
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Eingangssequenz.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Eingangssequenz.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Einschlag">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Einschlag fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Einschlag.einschlag">
+            <summary>
+            Dieses Bitmap wird jedem Einschlag übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Einschlag.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Einschlag
+            </summary>
+            <param name="bitmap">Bitmap des Einschlags</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Einschlags</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Einschlag.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Einschlag.Setzen">
+            <summary>
+            Einschlag wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Einschlag.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Einschlag um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Einschlag.BewegenVert">
+            <summary>
+            Diese Methode bewegt den Einschlag um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Einschlag.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Einschlag.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Endsequenz">
+            <summary>
+            Diese Klasse beeinhaltet das Video der Endanimation des Spiels
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Endsequenz.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik zum Video der Endanimation ab
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Endsequenz.timer">
+            <summary>
+            Dieser Timer schließt das Spiel
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Endsequenz.ticks">
+            <summary>
+            Dieser Zähler wird jede Sekunde um eins erhöht
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.#ctor">
+            <summary>
+            Konstruktor der Eingangssequenz
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgelöst, sobald der Timer überläuft. Die Variable ticks wird um eins erhöht und wenn sie 16 erreicht, wird das Spiel beendet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.Endsequenz_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald die Endanimation geladen wird. Der Timer , das Video und der Soundplayer wird gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.Endanimation_MouseDownEvent(System.Object,AxWMPLib._WMPOCXEvents_MouseDownEvent)">
+            <summary>
+            Dieses Event wird ausgelöst, sobald die linke oder rechte Maustaste gedrückt wird. Es beendet das Spiel
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Endsequenz.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Endsequenz.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Erde">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Erde fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Erde.erde">
+            <summary>
+            Dieses Bitmap wird jeder Erde übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Erde.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Erde
+            </summary>
+            <param name="bitmap">Bitmap der Erde</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit der Erde</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Erde.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Erde.Setzen">
+            <summary>
+            Erde wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Erde.BewegenHori">
+            <summary>
+            Diese Methode bewegt die Erde um den Wert von velocity von rechts nach links
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Erde.BewegenVert">
+            <summary>
+            Diese Methode bewegt die Erde um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Erde.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Erde.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.FeindlichesSchiff">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses FeindlichesSchiff fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.FeindlichesSchiff.feindlichesSchiff">
+            <summary>
+            Dieses Bitmap wird jedem feindlichen Schiff übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis FeindlichesSchiff
+            </summary>
+            <param name="bitmap">Bitmap des feindlichen Schiffes</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des feindlischen Schiffes</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.Setzen">
+            <summary>
+            Feindliches Schiff wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.BewegenHori">
+            <summary>
+            Diese Methode bewegt das feindliche Schiff um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.BewegenVert">
+            <summary>
+            Diese Methode bewegt das feindliche Schiff um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.FeindlichesSchiff.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Flugkoerper">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten eines Flugkoerpers fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugkoerper.bitmap">
+            <summary>
+            Jedem Flugkoerper wird ein Bitmap zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugkoerper.rectangle">
+            <summary>
+            Jedem Flugkoerper wird ein Rectangle zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugkoerper.velocity">
+            <summary>
+            Jedem Flugkoerper wird eine velocity zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugkoerper.schildflag">
+            <summary>
+            Jedem Flugkoerper wird ein schildflag zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugkoerper.munitionsflag">
+            <summary>
+            Jedem Flugkoerper wird ein munitionsflag zugewiesen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für einen Flugkoerper
+            </summary>
+            <param name="bitmap">Das Bitmap des jeweiligen Flugkoerpers</param>
+            <param name="rectangle">Das umarandende REchteck des Flugkoerpers</param>
+            <param name="velocity">Die geschwindigkeit des Flugkoerpers</param>
+            <param name="schildflag">An dieser Flag kann in der Kollisssionanalyse ein Schild erkannt werden</param>
+            <param name="munitionsflag">An dieser Flag kann in der Kollisssionanalyse Munition erkannt werden</param>
+        </member>
+        <member name="P:Space_Riders.Flugkoerper.Bitmap">
+            <summary>
+            Propertie für die Bitmap
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugkoerper.Rectangle">
+            <summary>
+            Propertie für das Rechteck
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugkoerper.Velocity">
+            <summary>
+            Propertie für die velocicty
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugkoerper.Schildflag">
+            <summary>
+            Propertie für das schildflag
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugkoerper.Munitionsflag">
+            <summary>
+            Propertie für das munitionsflag
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.BewegenVert">
+            <summary>
+            Methode um einen Flugkoerper vertikal zu bewegen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.BewegenHori">
+            <summary>
+            Methode um einen Flugkoerper horizontal zu bewegen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.Bild">
+            <summary>
+            Diese Methode legt das Bitmap des Flugkoerpers fest
+            </summary>
+            <returns>Bild der Flugkoerpers</returns>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.Setzen">
+            <summary>
+            Diese Methode entfernt den Flugkoerper aus der Spielfläche
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugkoerper.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Flugmanager">
+            <summary>
+            Die Klasse Flugmanager regelt im Hintergrund die Abläufe des Spiels
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.score">
+            <summary>
+            Diese Variable beinhaltet den Wert des erreichten Scores
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.level">
+            <summary>
+            Diese Variable beinhaltet den Wert des erreichten Levels
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.hindernisse_hori">
+            <summary>
+            In dieser Liste werden alle Flugkoerper gespeichert, die horizontal bewegt werden
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.hindernisse_vert">
+            <summary>
+            In dieser Liste werden alle Flugkoerper gespeichert, die vertikal bewegt werden
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.schuss">
+            <summary>
+            In diesesr Liste werden alle Schüsse gespeichert, die der Spieler abgibt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.raumschiff">
+            <summary>
+            Es wird eine Instanz der Klasse Raumschiff erzeugt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.sizeWidthPanel">
+            <summary>
+            Diese Variable beinhaltet Breite der Spielflaeche
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.sizeHeightPanel">
+            <summary>
+            Diese Variable beinhaltet Höhe der Spielflaeche
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.schild">
+            <summary>
+            An dieser Flag kann erkannt werden, ob ein Hindernis ein Schild ist, oder nicht
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.kristalle">
+            <summary>
+            Diese Variable beinhaltet den Wert der Kristalle die zur Erzeugung eines Schutzschildes nötig sind
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.erg">
+            <summary>
+            Dieser string zeigt den Status des Schutzschildes an
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.beams">
+            <summary>
+            Diese Variable beinhaltet den Wert (Beams), wie oft die Methode Beam() des Flugmanagers aufgerufen werden kann
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.wiederholung">
+            <summary>
+            Diese Flag zeigt an, ob sich das Level um 5 erhöht hat
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.scoreup">
+            <summary>
+            Diese Flag zeigt an, ob sich der Score um 500 erhöht hat
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.munition">
+            <summary>
+            Anzahl der möglichen Schüsse
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.bomben">
+            <summary>
+            Anzahl der möglichen Bombeneinsätze
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.hindernisseErzeugen">
+            <summary>
+            Dieser Timer bestimmt das Intervall, ind dem das Event hindernisseErzeugen_Tick aufgerufen wird
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.PanelGroeßeFestlegen(System.Int32,System.Int32)">
+            <summary>
+            Diese Methode legt die Größe der Spielfläche fest
+            </summary>
+            <param name="sizeWidthPanel">Breite der Spielfläche</param>
+            <param name="sizeHeightPanel">Höhe der Spielfläche</param>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.HindernisseHori">
+            <summary>
+            Propertie um auf die Liste HindernisseHori zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.HindernisseVert">
+            <summary>
+            Propertie um auf die Liste HindernisseVert zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Schuss">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Raumschiff">
+            <summary>
+            Propertie um auf Raumschiff zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Score">
+            <summary>
+            Propertie um auf Score zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Level">
+            <summary>
+            Propertie um auf Level zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Schild">
+            <summary>
+            Propertie um auf Score zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Kristalle">
+            <summary>
+            Propertie um auf Kristalle zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Beams">
+            <summary>
+            Propertie um auf Beams zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Wiederhohlung">
+            <summary>
+            Diese Flag verhindert mehrmals aufrufen von Methoden
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Munition">
+            <summary>
+            Propertie um auf Munition zuzugreifen
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.HindernisseErzeugen">
+            <summary>
+            Dieser Timer erstellt in jedem Intervall Hindernisse
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Flugmanager.Bomben">
+            <summary>
+            Propertie um auf Bomben zuzugreifen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Start">
+            <summary>
+            Dieser Timer bestimmt das Intervall, ind dem das Event hindernisseErzeugen_Tick aufgerufen wird
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.rnd">
+            <summary>
+            Ein Objekt vom Typ Zufall wird erzeugt um später zufällige Koordinaten zu erzeugen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.emptyBitmap">
+            <summary>
+            Diese Bitmap wird später allen Flugkoerpern zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.bedingung">
+            <summary>
+            Diese Flag zeigt an, wie oft die Methoden HindernisseVertList() und HindernisseHoriList() aufgerufen werden
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.emptyRectangle">
+            <summary>
+            Dieses Rectangle wird später allen Flugkoerpern zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityAsteroid">
+            <summary>
+            Anfangsgeschwindigkeit des Asteroids
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySatellit">
+            <summary>
+            Anfangsgeschwindigkeit des Satellits
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityFeindlichesSchiff">
+            <summary>
+            Anfangsgeschwindigkeit des feindlichen Schiffs
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityKomet">
+            <summary>
+            Anfangsgeschwindigkeit des Komets
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityBlauer_Komet">
+            <summary>
+            Anfangsgeschwindigkeit des blauen Komets
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityRaumschiff">
+            <summary>
+            Anfangsgeschwindigkeit des Raumschiffs
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySchild">
+            <summary>
+            Anfangsgeschwindigkeit des Schilds
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityMunition">
+            <summary>
+            Anfagsgeschwindigkeit der Munition
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityBioschiff">
+            <summary>
+            Anfangsgeschwindigkeit des Bioschiffs
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityMetallplanet">
+            <summary>
+            Anfangsgeschwindigkeit des Metallplanets
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySkelettstation">
+            <summary>
+            Anfangsgeschwindigkeit der Skelettstation
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityDoppelstation">
+            <summary>
+            Anfangsgeschwindigkeit der Doppelstation
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityEinschlag">
+            <summary>
+            Anfangsgeschwindigkeit des Einschlags
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityKreisschiff">
+            <summary>
+            Anfangsgeschwindigkeit des Kreisschiffs
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySaturn">
+            <summary>
+            Anfangsgeschwindigkeit des Saturns
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocityErde">
+            <summary>
+            Anfangsgeschwindigkeit der Erde
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySonne">
+            <summary>
+            Anfangsgeschwindigkeit der Sonne
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.velocitySchuss">
+            <summary>
+            Anfangsgeschwindigkeit eines Schusses
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Flugmanager.flag">
+            <summary>
+            Dieser Flag wird der logische Wert der Schildflag jedes Hindernisses zugewiesen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.hindernisseErzeugen_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieser Event - Handler erzeugt bei Überlauf des Timers hindernisseErzeugen die gegnerischen Flugkoerper
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.HindernisseVertList">
+            <summary>
+            Diese Methode erstellt verschiedene Hindernisse, welche vertikal über die Spielflaeche bewegt werden
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.HindernisseHoriList">
+            <summary>
+            Diese Methode erstellt verschiedene Hindernisse, welche horizontal über die Spielflaeche bewegt werden
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.HindernisseBewegen">
+            <summary>
+            Mit dieser Methode werden alle Hindernisse bewegt, die Geschwindigkeit der Hindernisse erhöht und Hindernisse gelöscht    
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.SchildStatus">
+            <summary>
+            Diese Methode gibt den Status des Schutzschildes des Raumschiffs aus 
+            </summary>
+            <returns>aktuelle Status des Schildes</returns>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Schildaktivieren">
+            <summary>
+            Diese Methode aktiviert das Schutzschild des Raumschiffs
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Krater(System.Drawing.Rectangle)">
+            <summary>
+            Entfernt alle Hindernisse im Umkreis eines Rechtscks, Bombe
+            </summary>
+            <param name="rect">"Bombenkrater"</param>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Schießen">
+            <summary>
+            Schuss wird ausgelöst
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Zuruecksetzen">
+            <summary>
+            Diese Methode setzt alle Werte auf die Startwerte zurück 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.RaumschiffAUF">
+            <summary>
+            Diese Methode ruft die Methode BewegenAUF() der Klasse Raumschiff auf
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.RaumschiffAB">
+            <summary>
+            Diese Methode ruft die Methode BewegenAB() der Klasse Raumschiff auf
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.RaumschiffLinks">
+            <summary>
+            Diese Methode ruft die Methode BewegenLinks() der Klasse Raumschiff auf
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.RaumschiffRechts">
+            <summary>
+            Diese Methode ruft die Methode BewegenRechts() der Klasse Raumschiff auf
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Beam(System.Int32,System.Int32)">
+            <summary>
+            Diese Methode prüft das gewählte Ramschiff und ruft die Methode RaumschiffBeam() der Klasse Raumschiff auf
+            </summary>
+            <param name="x">neue x Koordinate des Raumschiffs</param>
+            <param name="y">neue y Koordinate des Raumschiffs</param>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.BeamsMunitionBombenerhoehen">
+            <summary>
+            Diese Methode erhöht den Wert des Variable beams, wenn das Level über 14 ist
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.Treffer">
+            <summary>
+            Überprüfung ob ein Schuss ein Hinderniss getroffen hat 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Flugmanager.PruefeKolission">
+            <summary>
+            Diese Methode prüft auf Kollisionen des Raumschiffs mit allen Hindernissen, welche horizontal über die Spielflaeche bewegt wird
+            </summary>
+            <returns>flag ob Kollission stattgefunden hat oder nicht</returns>
+        </member>
+        <member name="T:Space_Riders.Hauptmenue">
+            <summary>
+            Diese Klasse ist das Hauptmenue des Spiels und enthält alle Pfade
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Hauptmenue.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.#ctor">
+            <summary>
+            Konstruktor des Haumptmenus
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Hauptmenue_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das Hauptmenue geladen wird. Zuerst wird die Eingangssequenz geöffnet, danach die beiden Videos und die Musik gestartet 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Spielen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet das eigentliche Spiel
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Highscore_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet die Form Highscore 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Spielanleitung_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet die Form Spielanleitung
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Optionen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet die Form Optionen
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Beenden_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet die Form Endsequenz
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Hauptmenue_Activated(System.Object,System.EventArgs)">
+            <summary>
+            Wenn das Hauptmenue aktiviert wird, wird der Hintergrundsound abgespielt und die Videos gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Hauptmenue_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            Wenn das Hauptmenue nicht das aktive Formular ist, werden die Videos und der Souond gestoppt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Hauptmenue.components">
+            <summary>
+            Erforderliche Designervariable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.Dispose(System.Boolean)">
+            <summary>
+            Verwendete Ressourcen bereinigen.
+            </summary>
+            <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
+        </member>
+        <member name="M:Space_Riders.Hauptmenue.InitializeComponent">
+            <summary>
+            Erforderliche Methode für die Designerunterstützung.
+            Der Inhalt der Methode darf nicht mit dem Code-Editor geändert werden.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.GameOver">
+            <summary>
+            Diese Klasse beeinhaltet das GameOver Formular
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOver.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOver.highscore">
+            <summary>
+            Diese Variable beinhaltet wenn GameOver geladen wird, den Wert des erreichten Scores im Spiel
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOver.schwierigkeit">
+            <summary>
+            Dieser string beimhaltet die Schwierigkeitsstufe als Text
+            </summary>
+        </member>
+        <member name="M:Space_Riders.GameOver.#ctor(System.Int32)">
+            <summary>
+            Konstruktor des GameOver Formulars
+            </summary>
+            <param name="score">erreichter Highscore im Spiel</param>
+        </member>
+        <member name="M:Space_Riders.GameOver.bBeenden_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event beendet das GameOver Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOver.bSpeichern_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event speichert den Namen, den Score, und die Schwierigkeit in die Datenbank
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOver.GameOver_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das GameOver Formular geladen wird. Dem string schwierigkeit abhängig von der Variable schwierigkeit der Klasse speicher zugeordnet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOver.GameOver_Activated(System.Object,System.EventArgs)">
+            <summary>
+            Wenn GameOver aktiviert wird, wird der Hintergrundsound abgespielt 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOver.GameOver_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            Wenn das GameOver nicht mehr das aktive Steuerelemet ist, wird der Sound gestoppt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.GameOver.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.GameOver.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.GameOver.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.GameOverAnimation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOverAnimation.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOverAnimation.timer">
+            <summary>
+            Dieser Timer schliesst das Formular, nachdem das Video beendet wurde
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOverAnimation.highscore">
+            <summary>
+            erreichter Highscore, aus dem Spiel wird an das GameOVer - Formular weitergegeben
+            </summary>
+        </member>
+        <member name="F:Space_Riders.GameOverAnimation.ticks">
+            <summary>
+            Sekunden 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.#ctor(System.Int32)">
+            <summary>
+            Konstruktor für das GameOverAnimation Formular
+            </summary>
+            <param name="score"></param>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.GameOverAnimation_Load(System.Object,System.EventArgs)">
+            <summary>
+            Wenn GameOverAnimation aktiviert wird, wird der Hintergrundsound abgespielt und das Video gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.timer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Timerüberlaufereigniss
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.Animation_MouseDownEvent(System.Object,AxWMPLib._WMPOCXEvents_MouseDownEvent)">
+            <summary>
+            Mausklick schliesst das Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.GameOverAnimation.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.GameOverAnimation.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Highscore">
+            <summary>
+            Diese Klasse beeinhaltet das Highscore Formular
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Highscore.player">
+            <summary>
+            Dieser Soundplayer spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Highscore.datenquelle">
+            <summary>
+            Diser string beinhaltet den Namen der Datenbak aus der gelesen bzw. geschrieben wird
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Highscore.verbindung">
+            <summary>
+            Diese Instanz wird später zur Verbindung mit der Datenbank genutzt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Highscore.schwierigkeit">
+            <summary>
+            Dieser string beinhaltet die Schwierigkeitsstufe als Textform
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Highscore.#ctor">
+            <summary>
+            Konstruktor des Highscore Formulars
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Highscore.Highscore_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das Highscore Formular geladen wird. Die Combobox auf "Alle" gesetzt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.Highscore_schließen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event beendet das Highscore Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.HighscoreLesen(System.String)">
+            <summary>
+            Diese Methode liest die Datenbank aus und schreibt die Datensätze in die Listbox
+            </summary>
+            <param name="commando">SQL - Abfragetext</param>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Highscore.Speichern_Click(System.Object,System.EventArgs)">
+            <summary>
+            Diese Methode speichert die Elemente, welche in der Listbox angezeigt wird als .csv ab
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.cbHighscore_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event ändert die angezeigten Elemente in der Listbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.Drucken_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event ruft den PrintPageEventHandler auf und öffnet eine Druckansicht der Listbox
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.document_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Dieses Event legt das Aussehen der Druckansicht fest
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.Highscore_Activated(System.Object,System.EventArgs)">
+            <summary>
+            Wenn Highscore zur aktiven Form wird, wird die Hintergrundmusik gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Highscore.Highscore_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            Wenn Highscore inaktiv wird, wird der Mediaplayer gestoppt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Highscore.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Highscore.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Highscore.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Hindernisse">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten eines Hindernisses fest
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Hindernisse.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für ein Hindernis
+            </summary>
+            <param name="bitmap">Das Bitmap des jeweiligen Hindernisses</param>
+            <param name="rectangle">Das umarandende REchteck des Hindernisses</param>
+            <param name="velocity">Die geschwindigkeit des Hindernisses</param>
+            <param name="schildflag">An dieser Flag kann in der Kollisssionanalyse ein Schild erkannt werden</param>
+            <param name="munitionsflag">An dieser Flag kann in der Kollisssionanalyse Munition erkannt werden</param>
+        </member>
+        <member name="T:Space_Riders.IModify">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Space_Riders.IModify.Bild">
+            <summary>
+            Diese Methode legt das Bitmap des Flugkoerpers fest
+            </summary>
+            <returns>Bild der Flugkoerpers</returns>
+        </member>
+        <member name="M:Space_Riders.IModify.Setzen">
+            <summary>
+            Diese Methode entfernt den Flugkoerper aus der Spielfläche
+            </summary>
+        </member>
+        <member name="M:Space_Riders.IModify.BewegenVert">
+            <summary>
+            Methode um einen Flugkoerper horizontal zu bewegen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.IModify.BewegenHori">
+            <summary>
+            Diese Methode legt das Bitmap des Flugkoerpers fest
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Komet">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Komet fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Komet.komet">
+            <summary>
+            Dieses Bitmap wird jedem Kometen übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Komet.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Komet
+            </summary>
+            <param name="bitmap">Bitmap des Kometen</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Kometen</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Komet.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Komet.Setzen">
+            <summary>
+            Komet wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Komet.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Kometen um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Komet.BewegenVert">
+            <summary>
+            Da dieses Hinderniss nur von links nach rechts bewegt wird, wird diese Methode nicht implementiert
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Komet.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Komet.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Kreisschiff">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Kreisschiff fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Kreisschiff.kreisschiff">
+            <summary>
+            Dieses Bitmap wird jedem Kreisschiff übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Kreisschiff
+            </summary>
+            <param name="bitmap">Bitmap des Kreisschiffs</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Kreisschiffs</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.Setzen">
+            <summary>
+            Kreisschiff wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.BewegenHori">
+            <summary>
+            Diese Methode bewegt das Kreisschiff um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.BewegenVert">
+            <summary>
+            Diese Methode bewegt das Kreisschiff um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Kreisschiff.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Metallplanet">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Metallplanet fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Metallplanet.metallplanet">
+            <summary>
+            Dieses Bitmap wird jedem Metallplaneten übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Metallplanet
+            </summary>
+            <param name="bitmap">Bitmap des Metallplaneten</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Metallplaneten</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.Setzen">
+            <summary>
+            Metallplanet wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Metallplaneten um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.BewegenVert">
+            <summary>
+            Diese Methode bewegt den Metallplaneten um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Metallplanet.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Munition">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten der Munition fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Munition.munition">
+            <summary>
+            Dieses Bitmap wird jedem Schild übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Munition.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für die Munition
+            </summary>
+            <param name="bitmap">Bitmap der Munition</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit der Munition</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, true</param>
+        </member>
+        <member name="M:Space_Riders.Munition.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein grünes Rechteck mit dem Buchstaben S angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Munition.Setzen">
+            <summary>
+            Munition wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Munition.BewegenHori">
+            <summary>
+            Diese Methode bewegt das Schild um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Munition.BewegenVert">
+            <summary>
+            Diese Methode bewegt das Schild um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Munition.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Munition.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Optionen">
+            <summary>
+            Diese Klasse beeinhaltet das Optionen Formular
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Optionen.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Optionen.#ctor">
+            <summary>
+            Konstruktor des Optionen Formulars
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Optionen.Optionen_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das GameOver Formular geladen wird. Der Soundplayer wird gestartet und das Raumschiff und die Schwierigkeit abhängig von den Variablen schiff und  schwierigkeit der Klasse speicher gewählt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.Optionen_schließen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event beendet das Optionen Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.Speichern_und_fortsetzen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event setzt die Variablen der Klasse Speicher, schiff und schwierigkeit abhängig von den gwählten Optionen fest
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.Globale_Musik_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.Optionen_Activated(System.Object,System.EventArgs)">
+            <summary>
+            Wenn das Optionen aktiviert wird, wird der Hintergrundsound abgespielt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Optionen.Optionen_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+             Wenn das Hauptmenue nicht das aktive Formular ist, wird der Souond gestoppt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Optionen.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Optionen.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Optionen.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Pause">
+            <summary>
+            Diese Klasse beeinhaltet das Pause Formular
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.spiel">
+            <summary>
+            Es wird eine Instanz der Klasse Spiel erstellt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.flugmanger">
+            <summary>
+            Es wird eine Instanz der Klasse Flugmanager erstellt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.raumschiff">
+            <summary>
+            Es wird eine Instanz der Klasse Raumschiff erstellt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.player">
+            <summary>
+            Dieser Soundplayer spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.punkte">
+            <summary>
+            Dieser Variable wird der Wert des Scores des Spiels zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.schwierigkeit">
+            <summary>
+            Dieser Variable wird der Wert des Levels des Spiels zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.schiff">
+            <summary>
+            Dieser Variable wird der Wert des Raumschiffs des Spiels zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.level">
+            <summary>
+            Dieser Variable wird der Wert der Variable schwierigkeit der Klasse Speicher zugewiesen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Pause.sound">
+            <summary>
+            Diese Flag steurt den Sound im Spiel
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Pause.#ctor(System.Int32,System.Int32,Space_Riders.Raumschiff,System.Boolean,Space_Riders.Flugmanager)">
+            <summary>
+            Konstruktor des Pause Formulars
+            </summary>
+            <param name="score"></param>
+            <param name="spiellevel"></param>
+            <param name="schiff"></param>
+            <param name="musik"></param>
+            <param name="manager"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Pause_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das Highscore Pause geladen wird. Der Soundplayer wird gestartet und das Raumschiff und die Schwierigkeit abhängig von den Variablen schiff und  schwierigkeit der Klasse speicher gewählt und die verschiedenen Raumschiffe aktiviert bzw. deaktiviert
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.cMusik_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Spiel_fortsetzen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event setzt das Spiel fort und setzt falls nötig das Spiel zurück
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Beenden_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event beendet das Pause Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Score_zuruek">
+            <summary>
+            Diese Methode überprüft, ob die Schwierigkeit verändert wurde. Falls ja, ruft sie die Methode Zuruecksetzen der Klasse Flugmanager auf
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Pause.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Spielanleitung_öffnen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event öffnet die Form Spielanleitung
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Pause_Activated(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Pause.Pause_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Pause.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Pause.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Pause.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Program.Main">
+            <summary>
+            Der Haupteinstiegspunkt für die Anwendung.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Properties.Resources">
+            <summary>
+              Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.ResourceManager">
+            <summary>
+              Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Culture">
+            <summary>
+              Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+              Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Asteroid">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Bioschiff">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Blauer_komet">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Cockpit">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.DarthVaderEins">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.DarthVaderZwei">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Doppelstation">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Einschlag">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Erde">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Falke">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.FeindlichesSchiff">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.GameOver">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Haumptmenue">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Highscore">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Komet">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Kreisschiff">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Leertaste">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.linker_Mausklick">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Metallplanet">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.MilleniumFalke">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Munition">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.MusicMute">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.MusicOn">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Optionen">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Parkbank">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Pause">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.RTaste">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Satellit">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.saturn">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff1">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff2">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff21">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff3">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff4">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff5">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schiff6">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Schild">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Skelettstation">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Sonne">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Spielanleitung">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteA">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteC">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteD">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteDrei">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteEins">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteESC">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteF">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteR">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteS">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteW">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.TasteZwei">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Properties.Resources.Verschwinden">
+            <summary>
+              Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Raumschiff">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Raumschiff fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Raumschiff.raumschiff">
+            <summary>
+            Dieses Bitmap wird jedem Raumschiff übergeben
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Raumschiff.rec">
+            <summary>
+            Dieses Rechteck wird jedem Raumschiff übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Raumschiff
+            </summary>
+            <param name="bitmap">Bitmap des Raumschiffs</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Raumschiffs</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenHori">
+            <summary>
+            Da das Raumschiff per Tastendruck gesetuert wird, wird diese Methode nicht implementiert
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenVert">
+            <summary>
+            Da das Raumschiff per Tastendruck gesteuert wird, wird diese Methode nicht implementiert
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.Bild">
+            <summary>
+            Diese Methode legt das Bild des Raumschiffs fest, falls die Ressource nicht vorhanden wird, wird ein blaues Rechteck mit dem Buchstaben R angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.Setzen">
+            <summary>
+            Diese Methode setzt das Raumschiff auf den Anfangspunkt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenAuf">
+            <summary>
+            Diese Methode bewegt das Raumschiff nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenAb(System.Int32)">
+            <summary>
+            Diese Methode bewegt das Raumschiff nach unten
+            </summary>
+            <param name="sizeHeightPanel">Begrenzung der Bewegung</param>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenLinks">
+            <summary>
+            Diese Methode bewegt das Raumschiff nach links
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.BewegenRechts(System.Int32)">
+            <summary>
+            Diese Methode bewegt das Raumschiff nach rechts
+            </summary>
+            <param name="sizeWidthPanel">Begrenzung der Bewegung</param>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.RaumschiffBeam(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Diese Methode setzt das Raumschiff auf die Koordinaten x, y, wenn diese in einem bestimmten Bereich liegen
+            </summary>
+            <param name="x">alte x Koordinate des Raumschiffs</param>
+            <param name="y">alte y Koordinate des Raumschiffs</param>
+            <param name="width">Begrenzung auf ie Spielfläche</param>
+            <param name="height">Begrenzung auf die Spielfläche</param>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Raumschiff.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Saturn">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Saturn fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Saturn.saturn">
+            <summary>
+            Dieses Bitmap wird jedem Saturn übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Saturn.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Saturn
+            </summary>
+            <param name="bitmap">Bitmap des Saturns</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Saturns</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Saturn.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Saturn.Setzen">
+            <summary>
+            Saturn wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Saturn.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Saturn um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Saturn.BewegenVert">
+            <summary>
+            Diese Methode bewegt den Saturn um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Saturn.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Saturn.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Schuss">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten eines Schusses fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Schuss.schuss">
+            <summary>
+            Dieses Bitmap wird jeder Schuss übergeben
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Schuss.pinsel">
+            <summary>
+            Diese Pinsel bestimmt die Farbe des Schusses
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schuss.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für einen Schuss
+            </summary>
+            <param name="bitmap">Bitmap dees Schusses</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Schusses</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Schuss.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt
+            </summary>
+            <returns>Dieses Bitmap wird dem Schuss zugordnet</returns>
+        </member>
+        <member name="M:Space_Riders.Schuss.Setzen">
+            <summary>
+            Schuss wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schuss.BewegenHori">
+            <summary>
+            Diese Methode bewegt die Doppelstation um den Wert von velocity von links nach rechts
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schuss.BewegenVert">
+            <summary>
+            Es gibt nur Schüsse in horizontaler Richtung, des wegen Methode nicht implementiert
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schuss.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schuss.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Sonne">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Sonne fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Sonne.sonne">
+            <summary>
+            Dieses Bitmap wird jeder Sonne übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Sonne.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Sonne
+            </summary>
+            <param name="bitmap">Bitmap der Sonne</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit der Sonne</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Sonne.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Sonne.Setzen">
+            <summary>
+            Sonne wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Sonne.BewegenHori">
+            <summary>
+            Diese Methode bewegt die Sonne um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Sonne.BewegenVert">
+            <summary>
+            Diese Methode bewegt die Sonne um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Sonne.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Sonne.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Satellit">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Satellit fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Satellit.satellit">
+            <summary>
+            Dieses Bitmap wird jedem Satelliten übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Satellit.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Satellit
+            </summary>
+            <param name="bitmap">Bitmap des Satelliten</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Satelliten</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Satellit.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Satellit.Setzen">
+            <summary>
+            Satellit wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Satellit.BewegenHori">
+            <summary>
+            Diese Methode bewegt den Satelliten um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Satellit.BewegenVert">
+            <summary>
+            Diese Methode bewegt den Satelliten um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Satellit.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Satellit.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Schild">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Schildes fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Schild.schild">
+            <summary>
+            Dieses Bitmap wird jedem Schild übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schild.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+             Konstruktor für ein Schild
+            </summary>
+            <param name="bitmap">Bitmap des Schildes</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit des Schildes</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, true</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Schild.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein grünes Rechteck mit dem Buchstaben S angezeigt
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Space_Riders.Schild.Setzen">
+            <summary>
+            Schild wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schild.BewegenHori">
+            <summary>
+            Diese Methode bewegt das Schild um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schild.BewegenVert">
+            <summary>
+            Diese Methode bewegt das Schild um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schild.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Schild.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Skelettstation">
+            <summary>
+            Diese Klasse legt das Aussehen und das Verhalten des Hindernisses Skelettstation fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Skelettstation.skelettstation">
+            <summary>
+            Dieses Bitmap wird jedem Skelettstation übergeben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.#ctor(System.Drawing.Bitmap,System.Drawing.Rectangle,System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Konstruktor für das Hindernis Skelettstation
+            </summary>
+            <param name="bitmap">Bitmap der Skelettstation</param>
+            <param name="rectangle">Rechteck in das das Bitmap eingefügt wird</param>
+            <param name="velocity">Geschwindigkeit der Skelettstation</param>
+            <param name="schildflag">Boolsches Flag zur Erkennung eines Schildes, false</param>
+            <param name="munitionsflag">Boolsches Flag zur Erkennung von Munition, false</param>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.Bild">
+            <summary>
+            In dieser Methode wird das Bild festgelegt, falls die Ressource nicht gefunden wird, wird als Bild ein rotes Rechteck angezeigt
+            </summary>
+            <returns> </returns>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.Setzen">
+            <summary>
+            Skelettstation wird aus der Spielfläche entfernt
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.BewegenHori">
+            <summary>
+            Diese Methode bewegt die Skelettstation um den Wert von velocity von rechts nach links 
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.BewegenVert">
+            <summary>
+            Diese Methode bewegt die Skelettstation um den Wert von velocity von unten nach oben
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.Dispose">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Skelettstation.Dispose(System.Boolean)">
+            <summary>
+            Methode zur Löschung von Ressourcen
+            </summary>
+            <param name="disposing">Löschung von gemanagten Ressourcen</param>
+        </member>
+        <member name="T:Space_Riders.Speicher">
+            <summary>
+            Diese Klasse speichert spielübergreifend die Schwierigkeit, das Schiff, eine Flag ob global Musik gespielt wird und eine Flag die das Spiel beendet
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Speicher.schiff">
+            <summary>
+            Der Inhalt dieser Variable legt das Aussehen und das Verhalten des Raumschiffs fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Speicher.schwierigkeit">
+            <summary>
+            Diese Variable legt das Intervall des Timers HindernisseErzeugen im Flugmanagers fest
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Speicher.musicflag">
+            <summary>
+            Diese Variable legt fest ob global Musik abgespielt wird, oder nicht
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Speicher.endflag">
+            <summary>
+            Diese Flag beendet das Spiel
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Speicher.render">
+            <summary>
+            Rendering - Einstellung
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Speicher.Schiff">
+            <summary>
+            Mit dieser Propertie kann auf die Variable Schiff von außerhalb zugegriffen werden
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Speicher.Schwierigkeit">
+            <summary>
+            Mit dieser Propertie kann auf die Variable Schwierigkeit von außerhalb zugegriffen werden
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Speicher.MusicFlag">
+            <summary>
+            Mit dieser Propertie kann auf die Variable Musiscflag von außerhalb zugegriffen werden
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Speicher.EndFlag">
+            <summary>
+            Mit dieser Propertie kann auf die Variable Endflag von außerhalb zugegriffen werden
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Speicher.Render">
+            <summary>
+            Mit dieser Propertie kann auf die Variable Schwierigkeit von außerhalb zugegriffen werden
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Spiel">
+            <summary>
+            Diese Klasse beinhaltet das eigentliche Spiel
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.player">
+            <summary>
+            Dieser Soundplayer spielt die Hintergrundmusik 
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.manager">
+            <summary> 
+            Es wird eine Instanz der Klasse Flugmanager erstellt
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.zeichneAufPanel">
+            <summary>
+            Dieser Timer bestimmt das Intervall, mit das Panel neu gezeichnet wird
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.kollisionpruefung">
+            <summary>
+            Dieser Timer bestimmt wie oft auf Kolission geprüft 
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.musik">
+            <summary>
+            Diese Flag steuert den Sound im Spiel
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.wache">
+            <summary>
+            Diese Variable verhindert das die Meldung für neue Schiffe mehrmals aufgerufen wird
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.kollission">
+            <summary>
+            Dieser Backgroundworker führt in einem anderen Tread die Kollisionsüberprüfung aus
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.impakt">
+            <summary>
+            Dieser Backgroundworker führt in einem anderen Tread die Kollisionsüberprüfung mit einem Schuss aus
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.schusskontrolle">
+            <summary>
+            Diese Flag verhindert dauerfeuer
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.kontrolle">
+            <summary>
+            Dieser Timer definiert die Pausenzeit bei SChussabgabe
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Spiel.Fertig">
+            <summary>
+            Dieser Delegat wird vom Backgroundworker kollission aufgerufen und ermöglich es das GameOver - Formular über den Hintergrundthread aufzurufen
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spiel.raeumen">
+            <summary>
+            zählt auf 10 Sekunden und räumt dann die Spielfläche
+            </summary>
+        </member>
+        <member name="P:Space_Riders.Spiel.Wache">
+            <summary>
+            Propertie um auf Variable Wache von außen zuzugreifen
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spiel.#ctor">
+            <summary>
+            Konstruktor des Spiel Formulars
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spiel.Spiel_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald das Highscore Pause geladen wird. Der Soundplayer wird gestartet, das Timerintervall festgelegt, die Spielfläche festgelegt und die Start - Methode des Flugmanagers aufgerufen
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.zeichneAufPanel_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event zeichnet alle Objekte auf die Spielfläche und überprüft Kollisionen
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.kollisionpruefung_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieser Timer führt in einem bestimmten Intervall die Kollisionsprüfung durch 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.schusspruefung_Tick(System.Object,System.EventArgs)">
+            <summary>
+            Dieser Timereventhandler startet den Hintergrundthread zur Schussüberprüfung
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.kontrolle_Tick(System.Object,System.EventArgs)">
+            <summary>
+             Dieser Timereventhandler ermöglich nach seinem Ablauf das Abgeben eines Schusses
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.impakt_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Schussüberprüfung
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.kollission_DoWork(System.Object,System.ComponentModel.DoWorkEventArgs)">
+            <summary>
+            Kollissionprüfung
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.Spiel_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Diese Event ruft je nach Tastendruck verschiedenen Methoden auf
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.Achtung">
+            <summary>
+            Diese Methode gibt Meldung wenn eine neue Schiffsklasse verfügbar ist
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spiel.Beenden">
+            <summary>
+            Diese Methode beendet das Spiel
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spiel.Spiel_Activated(System.Object,System.EventArgs)">
+            <summary>
+            Wird ausgeführt, wenn das Spiel aktiviert ist. Timer und Musik wird gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.Musik(System.Boolean)">
+            <summary>
+            Diese Methode übernimmt das Spielmusikflag aus dem Pause - Menü
+            </summary>
+            <param name="flag"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.Spiel_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            Wird ausgeführt, wenn das Spiel deaktiviert ist. Timer und Musik wird gestoppt
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spiel.pSpielflaeche_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Diese Event wird beim Mausdruck ausgelöst und ruft die Beam - Methode das Flugmanagers auf
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Spiel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spiel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Spiel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Space_Riders.Spielanleitung">
+            <summary>
+            Diese Klasse beeinhaltet das Spielanleitung Formular
+            </summary>
+        </member>
+        <member name="F:Space_Riders.Spielanleitung.player">
+            <summary>
+            Dieser Player spielt die Hintergrundmusik ab
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.#ctor">
+            <summary>
+            Konstruktor des Spielanleitung Formulars
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.Anleitung_schließen_Click(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event beendet das Optionen Formular
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.Spielanleitung_Load(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event wird ausgeführt sobald die Eingangsanimation geladen wird. Der Soundplayer wird gestartet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.checkBox1_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Dieses Event schaltet die Musik an und aus
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.Spielanleitung_Activated(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.Spielanleitung_Deactivate(System.Object,System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Space_Riders.Spielanleitung.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Space_Riders.Spielanleitung.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+    </members>
+</doc>
